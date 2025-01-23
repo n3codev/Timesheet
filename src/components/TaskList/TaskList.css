@@ -1,0 +1,124 @@
+.main {
+  padding: 20px 0;
+  margin-bottom: 5rem;
+}
+
+.task-title {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  color: #dfdfdf;
+  margin-top: 8rem;
+}
+
+.task-content {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  color: #dfdfdf;
+}
+
+.item-row {
+  margin: 20px 0;
+  position: relative;
+}
+
+.check-flag {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 30px 30px;
+  transition: 350ms ease-in-out;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.small-text-label {
+  position: absolute;
+  top: 10px;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.small-text-label.hours {
+  right: 37px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.total {
+  float: left;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.total-label {
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.total-input {
+  color: #999;
+  border-bottom: 1px solid #999;
+  font-size: 14px;
+  font-weight: bold;
+  width: 50px;
+  text-align: center;
+}
+
+.check-flag:hover {
+  background-color: #f9f9f9;
+}
+
+.check-flag-label {
+  color: #666;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.hours-box {
+  width: 50px;
+  height: 20px;
+  margin-top: 10px;
+  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: center;
+}
+
+.checkmark .checkmark-icon {
+  transition: 350ms ease-in-out;
+  stroke: white;
+  stroke-width: 3px;
+  stroke-dashoffset: 30;
+  stroke-dasharray: 30;
+}
+
+.no-tasks-message {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-size: 30px;
+  color: #999999c0;
+}
+
+@media only screen and (max-width: 600px) {
+  .check-flag {
+    padding: 30px 20px 20px;
+  }
+
+  .check-flag-label {
+    font-size: 15px;
+  }
+
+  .small-text-label.hours {
+    right: 25px;
+  }
+}

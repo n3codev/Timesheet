@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+## Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"),
+    url("../fonts/Roboto-Light.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 100;
+  src: url("../fonts/Roboto-Thin.woff2") format("woff2"),
+    url("../fonts/Roboto-Thin.woff") format("woff");
+  font-style: normal;
+}
+
+/* Reset styles */
+body,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  border: 0;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+button:active,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+/* Global body styles */
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utility classes */
+.wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrap {
+    padding: 0 15px;
+  }
+}

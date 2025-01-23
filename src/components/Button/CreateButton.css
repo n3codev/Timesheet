@@ -1,0 +1,47 @@
+.btn {
+  padding: 15px 35px;
+  transition: 350ms ease-in-out;
+  background-color: #ed5928;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d3431b;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.btn:disabled:hover {
+  background-color: #ccc;
+}
+
+.btn-icon {
+  display: block;
+  cursor: pointer;
+}
+
+.btn-icon .icon {
+  width: 45px;
+  height: 45px;
+  transform: scale(1);
+  backface-visibility: hidden;
+  transition: 350ms ease-in-out;
+}
+
+.btn-icon .icon:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,95 @@
+.header {
+  padding-top: 40px;
+  background: #ed5928 url("../../../src/assets/images/header-bg.jpg") no-repeat
+    left bottom;
+  background-size: cover;
+}
+
+.header-blockquote {
+  max-width: 520px;
+  margin-left: auto;
+  text-align: right;
+}
+
+.header-quote {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #fff;
+  font-size: 46px;
+  font-weight: 300;
+}
+
+.header-cite {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.header-inner {
+  background-color: rgba(211, 67, 27, 0.5);
+}
+
+.header-inner .logo {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  height: 100%;
+  opacity: 0.1;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-quote {
+    font-size: 30px;
+  }
+
+  .header-cite {
+    font-size: 25px;
+  }
+
+  .header-inner .logo {
+    right: 20px;
+  }
+}
+
+.icon-plus {
+  width: 45px;
+  height: 45px;
+  transform: scale(1);
+  backface-visibility: hidden;
+  transition: 350ms ease-in-out;
+  cursor: pointer;
+  padding: 0px 16px;
+}
+
+.icon-plus:hover {
+  transform: scale(1.1);
+}
+
+.date-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.date-wrap time {
+  display: block;
+  margin-left: 40px;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.date-wrap .icon {
+  width: 25px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .date-wrap time {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+}
